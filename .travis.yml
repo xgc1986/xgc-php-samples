@@ -19,5 +19,6 @@ build:
         format: clover
 deploy:
   provider: heroku
+  app: xgc-samples
   api_key:
     secure: ZI/7R0GehIHxQvr0AN0zWe5xaoAxxE+//+8YQu0RqlWNjiHVo0nMPAp/Z562m7lzyjXLBGSd1hCUmkuDdQ4cWumnCn0oKNtBrvPPRwG/M4FXjDeO47k0LdOpC/51TWhoSKCp4QVv2PMGtE3fYMT3PGCrrBldAs1cQb4Vt+3036yha+4MO6d6oHpMMcXuyH6SS8lWVZOvkWpcX+9k3t4aXff25hGo8DEmTHuxGCGwhF4kMDzAwB3RHnK8hy7Jf2ZYcW+o8JZ/yTeI4jxotkck4Mt7EglATsyakAJV+C86uOrmFbAWmbBxsH6DTEpJiMRIaNDbTn89QDA33j1bAnW0Xslg0d+NB9uQAu4gdIX8lagias0hjf0RwA9RlOpYJoiH7ewTpDqCOHSEXF1glZLllqO5LlKONkoqiL88+nEnepjzBmWcwCa+K7RkPu+Kby6eDBijFeESdV/479dpG6SY/MoTW8hMV0xTOT8LPmWyl0dXBK1kDUWraSr01ueaY9gSUhhp66D1aod5VEzj9iBnavu4hNRJZnR0wVoPrzpiVGocDQMn3C26oDCF+ugx9v3x9btLhDRv3+XqdwVMPdIRQxgSCECoXfcEdGYZ4WuwBnFORHPc6PtC+zNamVao4/u0eC6gMNGPU5M1thfMY2r+2RZia8jr2wt8E9ATqA/aHkk=
