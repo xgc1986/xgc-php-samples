@@ -15,5 +15,5 @@ parameters:
     env(DATABASE_PORT): null
     env(DATABASE_NAME): xgc-samples
     env(DATABASE_USER): root
-    env(DATABASE_PASSWORD): 1234
+    env(DATABASE_PASSWORD): ~
     env(SECURITY_TOKEN): 393dd5ac84936bf72f90867cb1c1925fb1ede51424a98e2f446517bfc5bfa1e8
