@@ -17,6 +17,7 @@
 /web/bundles/
 /bin
 /.idea
+!/bin/console
 
 #
 ~*
