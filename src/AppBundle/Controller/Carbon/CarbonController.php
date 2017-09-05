@@ -10,7 +10,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -71,7 +70,7 @@ class CarbonController extends Controller
     {
         $doctrine = $this->get('doctrine');
         $carbons  = $doctrine->getRepository(CarbonLog::class)->findAll();
-        if (count($carbons) === 10) {
+        if (\count($carbons) === 10) {
             $doctrine->getManager()->remove($carbons[0]);
         }
 

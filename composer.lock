@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c1c6fea332e8251cdd5df2999720cc0",
-    "content-hash": "99cb889d228f0da59742054b212120a1",
+    "hash": "c0fc5bbaea0ad694a0d3e1f123d5f770",
+    "content-hash": "7cb657052718d8271878fe1f1f53ec6b",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2614,16 +2614,16 @@
         },
         {
             "name": "xgc/carbon-bundle",
-            "version": "0.5",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xgc1986/carbon-bundle.git",
-                "reference": "21d78f4f98679d5fa62e041da7bb96eb65938f87"
+                "reference": "61092d8bffeaf6c28fc18bd482aa5ea1907f4c2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xgc1986/carbon-bundle/zipball/21d78f4f98679d5fa62e041da7bb96eb65938f87",
-                "reference": "21d78f4f98679d5fa62e041da7bb96eb65938f87",
+                "url": "https://api.github.com/repos/xgc1986/carbon-bundle/zipball/61092d8bffeaf6c28fc18bd482aa5ea1907f4c2f",
+                "reference": "61092d8bffeaf6c28fc18bd482aa5ea1907f4c2f",
                 "shasum": ""
             },
             "require": {
@@ -2663,7 +2663,7 @@
                 "doctrine",
                 "symfony"
             ],
-            "time": "2017-09-04 21:47:29"
+            "time": "2017-09-05 20:21:49"
         },
         {
             "name": "xgc/php-config",
@@ -5048,7 +5048,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.9"
+        "php": ">=7.1"
     },
     "platform-dev": []
 }
