@@ -2614,16 +2614,16 @@
         },
         {
             "name": "xgc/carbon-bundle",
-            "version": "0.5.3",
+            "version": "0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xgc1986/carbon-bundle.git",
-                "reference": "012e11f2f6570533df777b66bd2350dde1ca7068"
+                "reference": "a2a3b3cc59614291d178986b308564246167259d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xgc1986/carbon-bundle/zipball/012e11f2f6570533df777b66bd2350dde1ca7068",
-                "reference": "012e11f2f6570533df777b66bd2350dde1ca7068",
+                "url": "https://api.github.com/repos/xgc1986/carbon-bundle/zipball/a2a3b3cc59614291d178986b308564246167259d",
+                "reference": "a2a3b3cc59614291d178986b308564246167259d",
                 "shasum": ""
             },
             "require": {
@@ -2663,7 +2663,7 @@
                 "doctrine",
                 "symfony"
             ],
-            "time": "2017-09-05 21:29:39"
+            "time": "2017-09-05 22:52:31"
         },
         {
             "name": "xgc/php-config",

@@ -5,6 +5,8 @@ namespace AppBundle\Controller\Carbon;
 
 use AppBundle\Entity\CarbonLog;
 use Carbon\Carbon;
+use DateTime;
+use Faker\Factory;
 use InvalidArgumentException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -37,6 +39,7 @@ class CarbonController extends Controller
     public function indexAction(Request $request)
     {
         $carbonModel = new CarbonLog();
+        $carbonModel->setDate(Carbon::instance(Factory::create()->dateTime));
 
         $form = $this->createFormBuilder($carbonModel, ['method' => 'POST'])
                      ->add('date', CarbonType::class)
