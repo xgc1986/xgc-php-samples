@@ -31,10 +31,10 @@
         <div class="col-lg-12">
             <h2>Libraries</h2>
             <ul>
-                <li><a href="#carbon">Carbon</a> <a href="github>"><i class="fa fa-github"></i></a></li>
-                <li><a href="#prettify">Prettify</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#carbon">Carbon Bundle</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#prettify">Prettify Bundle</a> <a href="github>"><i class="fa fa-github"></i></a></li>
                 <li><a href="#php-config">PHP Config</a> <a href="github>"><i class="fa fa-github"></i></a></li>
-                <li><a href="#assetics">Assetics</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#assetics">Xgc Assetic Bundle</a> <a href="github>"><i class="fa fa-github"></i></a></li>
             </ul>
         </div>
     </div>
@@ -43,7 +43,7 @@
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 id="carbon">Carbon</h2>
+            <h2 id="carbon">Carbon Bundle</h2>
 
             <p>A PHP library that integrates <a href="https://github.com/briannesbitt/Carbon" target="_blank">Carbon</a> with Symfony</p>
 
@@ -51,7 +51,7 @@
             <p>
                 <ul class="fa-ul">
                     <li>
-                        <i class="fa-li fa fa-code"></i>Doctrine
+                        <h4><i class="fa-li fa fa-code"></i>Doctrine</h4>
                         {% code %}
 &nbsp;
 /**
@@ -63,7 +63,7 @@ protected $createdAt;
                         {% endcode %}
                     </li>
                     <li>
-                        <i class="fa-li fa fa-code"></i>ParamConverter
+                        <h4><i class="fa-li fa fa-code"></i>ParamConverter</h4>
                         {% code %}
 &nbsp;
 /**
@@ -77,7 +77,7 @@ public function postAction(Carbon $date)
                         {% endcode %}
                     </li>
                     <li>
-                        <u><i class="fa-li fa fa-code"></i>Forms</u>
+                        <h4><i class="fa-li fa fa-code"></i>Forms</h4>
                         {% code %}
 &nbsp;
 /**
@@ -115,87 +115,101 @@ public function indexAction(Request $request)
                     </li>
                 </ul>
             </p>
-
-
-
-
-
         </div>
     </div>
+
+    <hr>
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 id="prettify">Prettify</h2>
+            <h2 id="prettify">Prettify Bundle</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
-                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
-                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
-                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
-                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
-                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
-                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
-                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
-                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
+                Php library that help to put syntax higlighters with ease with twig, By the date only uses code-prettifier, but is
+                intended to use another synax higlighters and themes on a future.
             </p>
 
-            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
-                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
-                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
-                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
-                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
-            </p>
+            {% code %}
+&nbsp;
+&lbrace;% code %&rbrace;
+    function log(string $word)
+    {
+        echo $word . PHP_EOL;
+    }
+&lbrace;% endcode %&rbrace;
+            {%  endcode %}
+            <p>Actually this code is done using Prettify Bundle</p>
         </div>
     </div>
+
+    <hr>
 
     <div class="row">
         <div class="col-lg-12">
             <h2 id="php-config">PHP Config</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
-                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
-                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
-                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
-                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
-                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
-                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
-                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
-                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
+                Php-Config allows to access to the values stored in php.ini file, and provides better readibility to
+                some of them, as for example read the maximum file size can ve be uploaded.
             </p>
 
-            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
-                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
-                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
-                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
-                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
-            </p>
+            {% code %}
+&nbsp;
+/* gets the maximum file size that can be uploaded in bytes */
+echo Config::uploadMaxFileSize();
+// 2097152
+
+/* gets the maximum file size that can be uploaded as is stored in php.ini */
+echo Config::load(Config::MAX_FILE_SIZE);
+// "2M"
+
+echo Config::load('session.name');
+// "PHPSESSID"
+            {%  endcode %}
         </div>
     </div>
 
+    <hr>
+
     <div class="row">
         <div class="col-lg-12">
-            <h2 id="assetics">Assetics</h2>
+            <h2 id="assetics">Xgc Assetic Bundle</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
-                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
-                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
-                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
-                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
-                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
-                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
-                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
-                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
-            </p>
+                Xgc Assetic Bundle Allows to manage js and css without remembering where are you using them. For example
+                I can create a group of resources to use, as for example bootstrap
 
-            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
-                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
-                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
-                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
-                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
+                {% code %}
+&nbsp;
+bootstrap4_full:
+  - 'jquery'
+  - 'popper'
+  - 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'
+  - 'bootstrap4'
+
+bootstrap4:
+  - 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'
+
+jquery:
+  - 'https://code.jquery.com/jquery-3.2.1.min.js'
+
+popper:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'
+                {%  endcode %}
+
+                {% code %}
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- in order, includes: jquery, popper, bootstrap js and bootsrap css --&gt;
+    &lbrace;&lbrace; xgc_assetic('bootstrap_full') &rbrace;&rbrace;
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+                {%  endcode %}
             </p>
         </div>
     </div>
 </div>
-<img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes">
+{#<img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes">#}
 
 </body>
 </html>
