@@ -4,7 +4,7 @@ imports:
     - { resource: services.yml }
     - { resource: assetics.yml }
     - { resource: '@XgcCarbonBundle/Resources/config/'}
-    - { resource: '@XgcAsseticsBundle/Resources/config/'}
+    - { resource: '@XgcAsseticsBundle/Resources/config/services.yml'}
     - { resource: '@CodePrettifyBundle/Resources/config/'}
 
 # Put parameters here that don't need to change on each machine where the app is deployed

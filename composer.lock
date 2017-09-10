@@ -2614,16 +2614,16 @@
         },
         {
             "name": "xgc/assetic-bundle",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xgc1986/xgc-assetic-bundle.git",
-                "reference": "0b71406370f37e2ad92fd32753ab067b3c24d757"
+                "reference": "b46f4885fcdb75baf45ea28064a508b6441973f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xgc1986/xgc-assetic-bundle/zipball/0b71406370f37e2ad92fd32753ab067b3c24d757",
-                "reference": "0b71406370f37e2ad92fd32753ab067b3c24d757",
+                "url": "https://api.github.com/repos/xgc1986/xgc-assetic-bundle/zipball/b46f4885fcdb75baf45ea28064a508b6441973f9",
+                "reference": "b46f4885fcdb75baf45ea28064a508b6441973f9",
                 "shasum": ""
             },
             "require": {
@@ -2658,7 +2658,7 @@
                 "php",
                 "php.ini"
             ],
-            "time": "2017-09-09T20:38:15+00:00"
+            "time": "2017-09-10T18:15:33+00:00"
         },
         {
             "name": "xgc/carbon-bundle",
