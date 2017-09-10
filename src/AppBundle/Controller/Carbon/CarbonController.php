@@ -12,6 +12,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -39,10 +40,10 @@ class CarbonController extends Controller
     public function indexAction(Request $request)
     {
         $carbonModel = new CarbonLog();
-        $carbonModel->setDate(Carbon::instance(Factory::create()->dateTime));
+        //$carbonModel->setDate(Carbon::instance(Factory::create()->dateTime));
 
         $form = $this->createFormBuilder($carbonModel, ['method' => 'POST'])
-                     ->add('date', CarbonType::class)
+                     ->add('date', CarbonType::class, ['widget' => 'single_text'])
                      ->add('send', SubmitType::class)
                      ->getForm();
 

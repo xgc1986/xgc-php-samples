@@ -1,0 +1,28 @@
+xgc_assetics:
+
+  bootstrap4_full:
+    - 'jquery'
+    - 'popper'
+    - 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'
+    - 'bootstrap4'
+
+  bootstrap4:
+    - 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'
+
+  awesomefont4:
+    - 'https://use.fontawesome.com/b1b8bf6350.js'
+
+  jquery:
+    - 'https://code.jquery.com/jquery-3.2.1.min.js'
+
+  popper:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'
+
+  holder:
+    - 'https://cdn.rawgit.com/imsky/holder/master/holder.js'
+
+  all:
+    - 'bootstrap4_full'
+    - 'awesomefont4'
+    - 'holder'
+    - 'prettify'

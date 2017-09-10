@@ -1,0 +1,201 @@
+<html>
+<head>
+    {{ xgc_assetic('all') }}
+
+    <style>
+        .prettyprint {
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Xgc Samples Page</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://github.com/xgc1986" role="button"><i class="fa fa-github" target="_blank"> </i></a>
+            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/javiergonzalezcuadrado" role="button" target="_blank"><i class="fa fa-linkedin"> </i></a>
+
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Libraries</h2>
+            <ul>
+                <li><a href="#carbon">Carbon</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#prettify">Prettify</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#php-config">PHP Config</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+                <li><a href="#assetics">Assetics</a> <a href="github>"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 id="carbon">Carbon</h2>
+
+            <p>A PHP library that integrates <a href="https://github.com/briannesbitt/Carbon" target="_blank">Carbon</a> with Symfony</p>
+
+            <p>Actually supports:</p>
+            <p>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa-li fa fa-code"></i>Doctrine
+                        {% code %}
+&nbsp;
+/**
+ * @var Carbon
+ *
+ * @ORM/Column(type="carbon")
+ */
+protected $createdAt;
+                        {% endcode %}
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-code"></i>ParamConverter
+                        {% code %}
+&nbsp;
+/**
+ * @Route("/post/{date}")
+ * @Method("GET")
+ */
+public function postAction(Carbon $date)
+{
+    //...
+}
+                        {% endcode %}
+                    </li>
+                    <li>
+                        <u><i class="fa-li fa fa-code"></i>Forms</u>
+                        {% code %}
+&nbsp;
+/**
+ * @Route("/")
+ * @Method("GET")
+ * @Template()
+ *
+ * @param Request $request
+ *
+ * @return array|RedirectResponse
+ */
+public function indexAction(Request $request)
+{
+    $carbonModel = new CarbonLog();
+    $carbonModel->setDate(Carbon::instance(Factory::create()->dateTime));
+
+    $form = $this->createFormBuilder($carbonModel, ['method' => 'POST'])
+                 ->add('date', CarbonType::class, ['widget' => 'single_text'])
+                 ->add('send', SubmitType::class)
+                 ->getForm();
+
+    $form->handleRequest($request);
+
+    if ($form->isSubmitted() && $form->isValid()) {
+        $carbonModel = $form->getData();
+
+        return $this->redirectToRoute('app_carbon_carbon_carbon', ['date' => $carbonModel->getDate()]);
+    }
+
+    return [
+        'form' => $form->createView(),
+    ];
+}
+                        {% endcode %}
+                    </li>
+                </ul>
+            </p>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 id="prettify">Prettify</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
+                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
+                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
+                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
+                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
+                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
+                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
+                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
+                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
+            </p>
+
+            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
+                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
+                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
+                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
+                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 id="php-config">PHP Config</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
+                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
+                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
+                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
+                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
+                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
+                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
+                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
+                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
+            </p>
+
+            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
+                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
+                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
+                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
+                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 id="assetics">Assetics</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor erat, dapibus at faucibus
+                vestibulum, dignissim vitae ante. Duis eleifend, ligula et ultrices iaculis, dolor lacus sagittis orci,
+                ultricies feugiat turpis nisl non lacus. Aenean auctor sapien sed euismod interdum. Suspendisse
+                vestibulum auctor libero at lacinia. Cras rhoncus diam id risus rhoncus rhoncus. Nunc vitae tempor
+                lectus. In eu metus diam. Praesent tortor enim, vulputate vitae finibus eu, volutpat quis massa.
+                Integer rhoncus quam eu justo faucibus, ut rutrum enim porta. Vivamus risus ante, accumsan a consectetur
+                efficitur, gravida non metus. Praesent ex velit, tincidunt vitae est a, elementum volutpat eros. Donec
+                tempor dapibus efficitur. Pellentesque vehicula arcu maximus felis egestas efficitur. Fusce vitae
+                suscipit ante. Vestibulum nec euismod nulla, eget congue orci.
+            </p>
+
+            <p>Nunc condimentum ligula imperdiet facilisis sollicitudin. Morbi quis nibh imperdiet, fermentum nisl nec,
+                malesuada velit. In vitae porttitor leo. Donec vel posuere est. Nulla accumsan scelerisque iaculis.
+                Nulla semper, velit vel tempus scelerisque, nunc nulla vestibulum libero, non pretium sapien quam et mi.
+                In ante orci, congue vitae tellus et, euismod pulvinar augue. Nullam vulputate luctus vulputate. Aliquam
+                pulvinar elit vel gravida ornare. Pellentesque quis feugiat orci. Nullam tincidunt egestas sapien.
+            </p>
+        </div>
+    </div>
+</div>
+<img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes"><img src="holder.js/300x200?random=yes">
+
+</body>
+</html>

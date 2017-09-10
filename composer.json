@@ -32,7 +32,9 @@
         "symfony/swiftmailer-bundle": "^2.3.10",
         "symfony/symfony": "3.3.*",
         "twig/twig": "^1.0||^2.0",
+        "xgc/assetic-bundle": "^1.0",
         "xgc/carbon-bundle": "^0.5",
+        "xgc/code-prettify-bundle": "^0.2",
         "xgc/php-config": "^0.2"
     },
     "require-dev": {
