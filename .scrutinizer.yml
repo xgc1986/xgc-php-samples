@@ -14,9 +14,3 @@ checks:
 
 filter:
     paths: ["src/*"]
-
-build:
-    environment:
-        heroku:
-            api_key: '25efb06f-a655-4e53-851c-29f9be82f57f'
-            email: 'xgc1986@gmail.com'
